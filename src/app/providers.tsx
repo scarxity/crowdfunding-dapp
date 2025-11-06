@@ -6,6 +6,8 @@ import {
   QueryOptions,
 } from "@tanstack/react-query";
 import { Toaster } from "react-hot-toast";
+import { SuiClientProvider, WalletProvider } from "@mysten/dapp-kit";
+import { networkConfig } from "./networkConfig";
 
 import api from "@/lib/api";
 
@@ -24,8 +26,12 @@ const queryClient = new QueryClient({
 export default function Providers({ children }: { children: React.ReactNode }) {
   return (
     <QueryClientProvider client={queryClient}>
-      <Toaster position="top-center" />
-      {children}
+      <SuiClientProvider networks={networkConfig} defaultNetwork="testnet">
+        <WalletProvider autoConnect>
+          <Toaster position="top-center" />
+          {children}
+        </WalletProvider>
+      </SuiClientProvider>
     </QueryClientProvider>
   );
 }
