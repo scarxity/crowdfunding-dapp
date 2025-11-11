@@ -96,10 +96,10 @@ const rogan = localFont({
 
 export const metadata: Metadata = {
   title: {
-    default: "Nextjs Starter Template",
-    template: "%s | Nextjs Starter Template",
+    default: "Sui Funding",
+    template: "%s | Sui Funding",
   },
-  description: "Nextjs 14.2.1 + Tailwind CSS starter template",
+  description: "Crowdfunding dApp built on top of Sui Blockchain.",
 };
 
 export default function RootLayout({
