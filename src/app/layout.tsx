@@ -96,10 +96,13 @@ const rogan = localFont({
 
 export const metadata: Metadata = {
   title: {
-    default: "Sui Funding",
-    template: "%s | Sui Funding",
+    default: "Flui",
+    template: "%s | Flui",
   },
-  description: "Crowdfunding dApp built on top of Sui Blockchain.",
+  icons: {
+    icon: "/favicon.ico",
+  },
+  description: "Public Good Funding dApp built on top of Sui Blockchain.",
 };
 
 export default function RootLayout({
