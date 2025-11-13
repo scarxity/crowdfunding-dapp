@@ -32,7 +32,7 @@ export default function HeroSection() {
                 Launch Public Good
               </button>
             </Link>
-            <Link href="/explore">
+            <Link href="/event">
               <button className="px-6 py-2 bg-gradient-to-r from-blue-700 to-indigo-600 hover:from-blue-600 hover:to-indigo-500 text-white rounded-md font-medium transition-all shadow-md shadow-indigo-500/40">
                 Fund Public Goods
               </button>
